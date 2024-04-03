@@ -3,44 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Image Cards</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <li class="simple-menu item"></li>
-    <header class="header -j header"></header>
-    <div class="header__container"></div>
-    <div class="header__top hide-mobile"></div>
-    <a href="https://www.wildberries.ru/">Продовайте на Wildberries</a>
-    <img
-      src="https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-lokatsiya-znachok-na-prozrachnom-fone-2.png"
-      alt=""
-    /> -->
-
-    <!-- ! navbar 
-    <nav class="nav">
-      <div class="navbar">
-        <div class="contayner">
-          <div class="nav_top">
-            <div class="nav_top__left">
-              <p>Москва</p>
-              <img src="./img/instagram.svg" alt="instagram" />
-              <img src="./img/facebook.svg" alt="facebook" />
-              <img src="./img/twitter.svg" alt="twitter" />
-            </div>
-            <div class="nav_top__right">
-              <div id="name"></div>
-              <a href="" id="registerBtn" class="navbar_reg">Sign up</a>
-              <a href="" id="loginTrigger" class="navbar_reg">Log in</a>
-              <a href="" id="logout" class="navbar_reg">Log out</a>
-              <p id="username"></p>
-            </div>
-          </div>
-          <div class="nav_bottom">
-            <div class="add">
-              <img src="./IMG/icon-add.png" alt="" />
-              <h2 class="logo">Add product</h2>
-            </div> -->
 
     <header>
       <div class="container">
@@ -84,17 +50,6 @@
       <ul id="product-list"></ul>
     </div>
 
-    <!-- <div class="container">
-      <button id="open-registration-btn">Регистрация</button>
-      <form id="registration-form" class="hidden">
-        <h3>Регистрация</h3>
-        <input id="usernameInp" type="text" placeholder="Username" />
-        <input id="emailInp" type="email" placeholder="Email" />
-        <input id="passwordInp" type="password" placeholder="Password" />
-        <input id="confirmInp" type="password" placeholder="Confirm password" />
-        <button id="signUp" class="glow-on-hover">Sign up</button>
-      </form>
-    </div> -->
 
     <form class="form modal">
       <h3>Sign up</h3>
@@ -115,5 +70,15 @@
     <tr>
       <!-- <h6>WILDBERRIES</h6> -->
     </tr>
+  
+  <div class="card-container">
+      <div class="card-container" id="cardContainer">
+        <!-- Card elements will be dynamically added here -->
+      </div>
+    </div>
+    <div class="pagination" id="pagination"></div>
+    <div id="image-container"></div>
+    <script src="./main.js"></script>
   </body>
+
 </html>

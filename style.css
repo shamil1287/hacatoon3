@@ -171,4 +171,69 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+/* Общие стили */
+
+
+/* Стили для контейнера карточек */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос строк для маленьких экранов */
+  justify-content: space-between; /* Равномерно распределяем элементы по горизонтали */
+  padding: 20px; /* Внутренние отступы */
+}
+
+/* Стили для карточек */
+.card {
+  width: calc(50% - 70px); /* Ширина карточки на больших экранах */
+  margin-bottom: 10px; /* Отступ между карточками */
+  background-color: #fff; /* Фон карточки */
+  border-radius: 8px; /* Скругление углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.card img {
+  width: 100%; /* Изображение на всю ширину карточки */
+  border-top-left-radius: 8px; /* Скругление верхних углов */
+  border-top-right-radius: 8px;
+}
+
+.card .card-body {
+  padding: 20px; /* Внутренние отступы внутри карточки */
+}
+
+/* Стили для кнопки "Посмотреть позже" */
+.watch-later-btn {
+  margin-left: 170px;
+  background-color: purple; /* Фоновый цвет кнопки */
+  color: white; /* Цвет текста на кнопке */
+  border: none; /* Убираем границу */
+  padding: 8px 16px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Изменяем указатель при наведении */
+  border-radius: 4px; /* Скругляем углы */
+  transition: background-color 0.3s; /* Плавное изменение цвета фона */
+}
+
+.watch-later-btn:hover {
+  background-color: #e21c4e; /* Фиолетовый цвет при наведении */
+}
+
+/* Стили для пагинации */
+.pagination {
+  display: flex;
+  justify-content: center; /* Выравниваем по центру */
+  margin-top: 20px; /* Верхний отступ */
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px 16px; /* Отступы внутри ссылок */
+  margin-right: 5px; /* Правый отступ между ссылками */
+  background-color: #ddd; /* Фоновый цвет */
+  color: #333; /* Цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 4px; /* Скругляем углы */
+}
+
+.pagination a:hover {
+  background-color: #ccc; /* Изменение цвета при наведении */
 }
