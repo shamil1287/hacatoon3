@@ -60,7 +60,7 @@
             </li>
             <li><a href="#">Продовайте на Wildberries</a></li>
             <li><a href="#"></a></li>
-            <li><a href="#">Красота и здоровье</a></li>
+            <li><a href="#">Работа на Wildberries</a></li>
             <li><a href="#">Товары для дома</a></li>
           </ul>
           <div class="search-bar">
@@ -70,6 +70,47 @@
         </nav>
       </div>
     </header>
+
+    <div class="container">
+      <h1>Управление товарами - Wildberries</h1>
+      <form id="crud-form">
+        <input
+          type="text"
+          id="input-product"
+          placeholder="Введите название товара"
+        />
+        <button type="submit">Добавить товар</button>
+      </form>
+      <ul id="product-list"></ul>
+    </div>
+
+    <!-- <div class="container">
+      <button id="open-registration-btn">Регистрация</button>
+      <form id="registration-form" class="hidden">
+        <h3>Регистрация</h3>
+        <input id="usernameInp" type="text" placeholder="Username" />
+        <input id="emailInp" type="email" placeholder="Email" />
+        <input id="passwordInp" type="password" placeholder="Password" />
+        <input id="confirmInp" type="password" placeholder="Confirm password" />
+        <button id="signUp" class="glow-on-hover">Sign up</button>
+      </form>
+    </div> -->
+
+    <form class="form modal">
+      <h3>Sign up</h3>
+      <input id="usernameInp" type="text" placeholder="Username" />
+      <input id="emailInp" type="email" placeholder="Email" />
+      <input id="passwordInp" type="password" placeholder="Password" />
+      <input id="confirmInp" type="password" placeholder="Confirm password" />
+      <button id="signUp" class="glow-on-hover">Sign up</button>
+    </form>
+
+    <form class="loginForm modal">
+      <h3>Log in</h3>
+      <input id="loginEmailInp" type="email" placeholder="Email" />
+      <input id="loginPasswordInp" type="password" placeholder="Password" />
+      <button id="loginBtn" class="glow-on-hover">Log in</button>
+    </form>
 
     <tr>
       <!-- <h6>WILDBERRIES</h6> -->
