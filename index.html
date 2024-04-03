@@ -7,13 +7,78 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card-container">
+
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img
+              src="https://verovski.com/wp-content/uploads/2013/10/logo.jpg"
+              alt="Wildberries Logo"
+            />
+          </div>
+          <ul class="nav-links">
+            <li>
+              <img
+                src="https://cdn-icons-png.freepik.com/256/1266/1266486.png"
+                alt=""
+              /><a href="#">Москва</a>
+            </li>
+            <li><a href="#">Продовайте на Wildberries</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Работа на Wildberries</a></li>
+            <li><a href="#">Товары для дома</a></li>
+          </ul>
+          <div class="search-bar">
+            <input type="text" placeholder="Поиск" />
+            <button type="submit">Найти</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Управление товарами - Wildberries</h1>
+      <form id="crud-form">
+        <input
+          type="text"
+          id="input-product"
+          placeholder="Введите название товара"
+        />
+        <button type="submit">Добавить товар</button>
+      </form>
+      <ul id="product-list"></ul>
+    </div>
+
+
+    <form class="form modal">
+      <h3>Sign up</h3>
+      <input id="usernameInp" type="text" placeholder="Username" />
+      <input id="emailInp" type="email" placeholder="Email" />
+      <input id="passwordInp" type="password" placeholder="Password" />
+      <input id="confirmInp" type="password" placeholder="Confirm password" />
+      <button id="signUp" class="glow-on-hover">Sign up</button>
+    </form>
+
+    <form class="loginForm modal">
+      <h3>Log in</h3>
+      <input id="loginEmailInp" type="email" placeholder="Email" />
+      <input id="loginPasswordInp" type="password" placeholder="Password" />
+      <button id="loginBtn" class="glow-on-hover">Log in</button>
+    </form>
+
+    <tr>
+      <!-- <h6>WILDBERRIES</h6> -->
+    </tr>
+  
+  <div class="card-container">
       <div class="card-container" id="cardContainer">
         <!-- Card elements will be dynamically added here -->
       </div>
     </div>
     <div class="pagination" id="pagination"></div>
     <div id="image-container"></div>
+    <script src="./main.js"></script>
   </body>
-  <script src="./main.js"></script>
+
 </html>
