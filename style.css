@@ -1,0 +1,81 @@
+/* Reset стилей и базовые стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(202, 21, 70);
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 200px;
+  height: 100px; /* Размер логотипа */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffc107; /* Цвет ссылок при наведении */
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #ffc107; /* Цвет кнопки */
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #ffdb4d; /* Цвет кнопки при наведении */
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-top: -20px;
+  margin-left: -10px;
+}
